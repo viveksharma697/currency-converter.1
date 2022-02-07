@@ -13,7 +13,7 @@ function calculate(){
     fetch(`https://open.er-api.com/v6/latest/${curri}`)
     .then(res => res.json())
     .then(data => {
-      // console.log(data);
+      console.log(data);
       const rate = data.rates[curri2];
       rate1.innerText = `1 ${curri} = ${rate} ${curri2}`
 
